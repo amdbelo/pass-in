@@ -23,7 +23,7 @@ public class EventController {
 
     @GetMapping("/{id}")
     public ResponseEntity<EventResponseDTO> getEvent(@PathVariable String id){
-        EventRespondeDTO event = this.eventService.getEventDetail(id);
+        EventResponseDTO event = this.eventService.getEventDetail(id);
         return ResponseEntity.ok(event);
     }
 
